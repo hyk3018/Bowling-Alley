@@ -140,11 +140,10 @@ public class Ball : MonoBehaviour
     {
         if (_ballThrownThisFrame)
         {
-            Debug.Log(BowlCount);
             _rigidbody.isKinematic = false;
             _ballThrown = true;
-            _rigidbody.AddForce(new Vector3(_throwVelocity.x, 0, _throwVelocity.y));
             _ballThrownThisFrame = false;
+            _rigidbody.AddForce(new Vector3(_throwVelocity.x, 0, _throwVelocity.y));
         }
     }
 }

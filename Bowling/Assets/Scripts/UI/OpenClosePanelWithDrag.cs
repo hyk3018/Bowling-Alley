@@ -23,6 +23,7 @@ public class OpenClosePanelWithDrag : MonoBehaviour, IBeginDragHandler, IDragHan
         transform.position = new Vector3(eventData.position.x, transform.position.y);
     }
 
+    // Check if we dragged enough to open or close
     public void OnEndDrag(PointerEventData eventData)
     {
         if (transform.position.x > openCloseThreshold)

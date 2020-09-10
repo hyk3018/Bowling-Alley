@@ -8,8 +8,8 @@ public class Pin : MonoBehaviour
     public event Action PinDropped;
 
     ParticleSystem _particleSystem;
-    bool _toppled = false;
-    bool _exploded = false;
+    bool _toppled;
+    bool _exploded;
 
     void OnCollisionEnter(Collision other)
     {
